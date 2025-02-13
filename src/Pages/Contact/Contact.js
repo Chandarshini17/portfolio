@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import MobileContactMePage from "./ContactMobile";
 
 const ContactMePage = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,16 @@ const ContactMePage = () => {
   });
 
   const [status, setStatus] = useState("");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -41,7 +52,14 @@ const ContactMePage = () => {
     }
   };
 
-  return (
+  return isMobile ? (
+    <MobileContactMePage
+      formData={formData}
+      handleChange={handleChange}
+      handleSubmit={handleSubmit}
+      status={status}
+    />
+  ) : (
     <div style={styles.pageContainer}>
       {/* Header Section */}
       <header style={styles.header}>

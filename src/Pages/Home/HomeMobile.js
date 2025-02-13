@@ -104,7 +104,10 @@ const HeroMobile = () => {
 
                 {/* Profile Image */}
                 <div style={{ marginTop: "20px" }}>
-                    <img src={chan} alt="Illustration" style={{ width: "450px", borderRadius: "50px", height: "600px" }} />
+                    <img src={chan} alt="Illustration" style={{  width: "90%",
+        maxWidth: "400px",
+        borderRadius: "50px",
+        height: "auto" }} />
                 </div>
 
                 {/* Main Content */}
