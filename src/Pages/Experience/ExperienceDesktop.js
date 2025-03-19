@@ -2,13 +2,6 @@ import React from "react";
 
 const experiences = [
   {
-    title: "Cyber Security",
-    year: "2024",
-    description:
-      "Conducted vulnerability assessments and penetration testing, identifying and mitigating critical security risks. Collaborated with the team to enhance web application security and strengthen defense mechanisms.",
-    image: "https://cdn-icons-png.flaticon.com/512/3144/3144456.png", // Replace with your image URL
-  },
-  {
     title: "MERN Stack - Better Tomorrow",
     year: "2024",
     description:

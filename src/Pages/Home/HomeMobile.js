@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import resumePDF from "../../documents/Gokulraj.pdf";
+import resumePDF from "../../documents/Gokulraj_22EE018.pdf";
 import chan from "../../images/gokul.jpg";
 import Project from "../Project/ProjectDesktop";
 import Skills from "../Skills/Skills";
@@ -95,31 +95,33 @@ const HeroMobile = () => {
                         ✖
                     </button>
 
-                    <a onClick={() => handleScroll(homeRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer"  }}>Home</a>
-                    <a onClick={() => handleScroll(experienceRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer"  }}>Experience</a>
-                    <a onClick={() => handleScroll(projectRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer"  }}>Project</a>
-                    <a onClick={() => handleScroll(skillsRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer"  }}>Skills</a>
-                    <a onClick={() => handleScroll(contactRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer"  }}>Contact</a>
+                    <a onClick={() => handleScroll(homeRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer" }}>Home</a>
+                    <a onClick={() => handleScroll(experienceRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer" }}>Experience</a>
+                    <a onClick={() => handleScroll(projectRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer" }}>Project</a>
+                    <a onClick={() => handleScroll(skillsRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer" }}>Skills</a>
+                    <a onClick={() => handleScroll(contactRef)} style={{ textDecoration: "none", color: "#fff", fontSize: "16px", cursor: "pointer" }}>Contact</a>
                 </div>
 
                 {/* Profile Image */}
                 <div style={{ marginTop: "20px" }}>
-                    <img src={chan} alt="Illustration" style={{  width: "90%",
-        maxWidth: "400px",
-        borderRadius: "50px",
-        height: "auto" }} />
+                    <img src={chan} alt="Illustration" style={{
+                        width: "90%",
+                        maxWidth: "400px",
+                        borderRadius: "50px",
+                        height: "auto"
+                    }} />
                 </div>
 
                 {/* Main Content */}
                 <div style={{ maxWidth: "90%" }}>
                     <h4 style={{ fontSize: "14px", fontWeight: "bold", color: "#fff" }}>WELCOME</h4>
-                    <h2 style={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}>
-                        Build Your Digital Presence with Cutting-Edge Website Development
+                    <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "#fff" }}>
+                        Showcasing My Expertise in Full-Stack Development & QA
                     </h2>
                     <p style={{ marginTop: "15px", fontSize: "14px", color: "#fff" }}>
-                        I am Gokul Raj, a passionate <b>Cybersecurity Enthusiast</b> and <b>Full-Stack Developer</b> dedicated to building secure and scalable web solutions.
-                        With expertise in <b>JavaScript, React, Node.js, and Express.js</b>, I specialize in crafting dynamic applications while implementing robust security practices.
-                        My goal is to bridge the gap between development and cybersecurity, ensuring digital products are not only high-performing but also well-protected.
+                        I am Gokul Raj, a passionate <b>QA Enthusiast</b> and <b>Full-Stack Developer</b> dedicated to building secure and scalable web solutions.
+                        With expertise in <b>JavaScript, React, Node.js, and Express.js</b>, I specialize in crafting dynamic applications while implementing robust testing practices.
+                        My goal is to bridge the gap between development and QA, ensuring digital products are not only high-performing but also well-tested and reliable.
                         Let's build something amazing together!
                     </p>
                     <button

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import HeroMobile from "./HomeMobile";
 import logo from "../../images/logo.png";
-import resumePDF from "../../documents/Gokulraj.pdf";
+import resumePDF from "../../documents/Gokulraj_22EE018.pdf";
 import chan from "../../images/gokul.jpg";
 import Project from "../Project/ProjectDesktop";
 import Skills from "../Skills/Skills";
@@ -109,7 +109,7 @@ const Hero = () => {
                     >
                         {[
                             { name: "Home", ref: homeRef },
-                            {name: "Experience", ref: experienceRef},
+                            { name: "Experience", ref: experienceRef },
                             { name: "Project", ref: projectRef },
                             { name: "Skills", ref: skillsRef },
                             { name: "Contact", ref: contactRef },
@@ -152,12 +152,12 @@ const Hero = () => {
                         style={{ maxWidth: "600px", textAlign: "left" }}
                     >
                         <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "#fff" }}>
-                            Showcasing My Expertise in Full-Stack Development & Cybersecurity
+                            Showcasing My Expertise in Full-Stack Development & QA
                         </h2>
                         <p style={{ marginTop: "15px", fontSize: "14px", color: "#fff" }}>
-                            I am Gokul Raj, a passionate <b>Cybersecurity Enthusiast</b> and <b>Full-Stack Developer</b> dedicated to building secure and scalable web solutions.
-                            With expertise in <b>JavaScript, React, Node.js, and Express.js</b>, I specialize in crafting dynamic applications while implementing robust security practices.
-                            My goal is to bridge the gap between development and cybersecurity, ensuring digital products are not only high-performing but also well-protected.
+                            I am Gokul Raj, a passionate <b>QA Enthusiast</b> and <b>Full-Stack Developer</b> dedicated to building secure and scalable web solutions.
+                            With expertise in <b>JavaScript, React, Node.js, and Express.js</b>, I specialize in crafting dynamic applications while implementing robust testing practices.
+                            My goal is to bridge the gap between development and QA, ensuring digital products are not only high-performing but also well-tested and reliable.
                             Let's build something amazing together!
                         </p>
                         <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
@@ -173,7 +173,7 @@ const Hero = () => {
                                     color: "#fff",
                                     cursor: "pointer",
                                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                                    marginRight: "420px"
+                                    marginRight: "430px"
                                 }}
                                 whileHover={{
                                     scale: 1.05,
